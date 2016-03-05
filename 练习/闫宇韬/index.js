@@ -1,1 +1,2 @@
-console.log("闫宇韬");
+var fs = require('fs');
+fs.readFile()
