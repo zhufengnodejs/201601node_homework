@@ -1,0 +1,26 @@
+--git 使用
+
+创建本地目录
+1. 创建目录
+2. 进入目录
+3. git init 初始化仓库
+4. 新建文件到工作区
+5. git add index.txt
+6. git commit -m"-m 代表注释"
+
+到github上创建远程仓库
+
+提交作业，先fork
+1. 克隆你的项目 git clone 仓库地址
+2. 修改工作区文件，添加你的练习
+3. git add -A
+4. git commit -m"提交第一次练习"
+5. git push origin master
+
+
+
+课件的地址
+https://github.com/zhufengnodejs/201601node
+
+作业的地址
+https://github.com/zhufengnodejs/201601node_homework.git
