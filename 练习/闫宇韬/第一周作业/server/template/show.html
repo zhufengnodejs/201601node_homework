@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>资料查看</title>
+		<link rel="stylesheet" type="text/css" href="css/mkui-base.css"/>
+		<style type="text/css">
+			body{
+				margin-left: auto;
+				margin-right: auto;
+				max-width: 640px;
+			}
+			h1{
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+			ul{
+				border-radius: 4px;
+				border:1px solid #ddd;
+				margin: 10px;
+			}
+			li{
+				padding: 8px 15px;
+				font-size: 16px;
+				color: #333;
+				border-top: 1px solid #ddd;
+				overflow: hidden;
+			}
+			a{
+				display: block;
+			}
+			li{
+				height:41px;
+				overflow: hidden;
+			}
+			li>span{
+				padding-right: 10px;
+				color: #333;
+				border-right: 1px solid #efefef;
+				padding-left: 10px;
+				display: block;
+				/*width: -webkit-calc(100% / 3);*/
+				float: left;
+			}
+			li>span:last-child{
+				border-right: none;
+			}
+			li:hover{
+				background: #f2f2f2;
+			}
+			li:first-child{
+				border-top: none;
+			}
+			i{
+				font-style: normal;
+				color: #999;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 class="text-c">数据展示</h1>
+		<ul>
+		</ul>
+	  	<script src="js/mkui.v0.2.js" type="text/javascript" charset="utf-8"></script>
+	   <script src="js/ajax.js" type="text/javascript" charset="utf-8"></script>
+	   <script type="text/javascript">
+	   	var showPage = {
+	   		html:'',
+	   		//定义查询方法
+	   		data:{
+					"method":"searchperson"
+				},
+			//发送数据
+			sendAjax:function(){
+				var that = this;
+				ajax({url:'./show.html',data:that.data,success:function(data){
+					var datalist = JSON.parse(data);
+					console.log(JSON.parse(data));
+					if(datalist.person.length == 0){
+						m.ui.alert({"msg":"您尚未添加任何数据，玩我是吧"});
+						m('ul').html("暂无数据");
+						return;
+					};
+					for(var i=0;i<datalist.person.length;i++){
+						console.log(data.person)
+						that.html += '<li><span>姓名：<i>'+datalist.person[i].name+'</i></span><span>年龄：<i>'+
+						datalist.person[i].age+'</i></span><span>职位：<i>'+datalist.person[i].des+'</i></span></li>'
+					}
+					m('ul').html(that.html);
+				}})
+			},
+			//初始化
+			init:function(){
+				this.sendAjax()
+			}
+	   };
+	   
+	   showPage.init();
+	   </script>
+	</body>
+</html>
