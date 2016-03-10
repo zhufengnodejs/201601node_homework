@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+</head>
+<body>
+<form class="form-horizontal">
+    <div class="form-group">
+        <label class="col-sm-2 control-label">姓名</label>
+
+        <div class="col-sm-8">
+            <input type="text" title="姓名" class="form-control" id="txtName" placeholder="请输入您的姓名">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">年龄</label>
+
+        <div class="col-sm-8">
+            <input type="text" title="年龄" class="form-control" id="txtAge" placeholder="请输入您的年龄">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-8">
+            <input type="button" class="btn btn-default add" value="添加">
+            <input type="button" class="btn btn-default edit" value="编辑">
+            <input type="button" class="btn btn-default delete" value="删除">
+            <input type="button" class="btn btn-default query" value="查询">
+            <span>(双击行可以选中进行编辑、勾选之后点击删除、添加不会刷新数据表、查询所有数据)</span>
+        </div>
+    </div>
+</form>
+<div class="tables col-sm-offset-1 col-sm-10">
+    <table class="table table-bordered table-striped table-hover">
+        <thead>
+        <tr class="success">
+            <th>
+                <input class="ckAll" type="checkbox">
+            </th>
+            <th>姓名</th>
+            <th>年龄</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+</body>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</html>

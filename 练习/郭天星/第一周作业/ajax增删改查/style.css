@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 50px 0 0 0;
+}
+
+.tables {
+    display: none;
+}
+
+table tr th {
+    text-align: center
+}
+
+table tr td {
+    text-align: center
+}
+
+.tr-active td {
+    background: yellowgreen !important;
+}
