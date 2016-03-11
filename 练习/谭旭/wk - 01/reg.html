@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    input[type='text'] {
+      display: inline-block;
+      width: 150px;
+      vertical-align: middle;
+      height: 24px;
+      padding: 6px 12px;
+      font-size: 12px;
+      line-height: 1.42857143;
+      color: #555;
+      background-color: #fff;
+      background-image: none;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    }
+
+    input[type='text']:focus {
+      border-color: #66afe9;
+      outline: 0;
+    }
+
+    input[type='button'] {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      color: #fff;
+      background-color: #5cb85c;
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.42857143;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      touch-action: manipulation;
+      cursor: pointer;
+      -webkit-user-select: none;
+      background-image: none;
+      border: 1px solid #4cae4c;
+      border-radius: 4px;
+      outline: none;
+    }
+
+    input[type='button']:hover {
+      color: #fff;
+      background-color: #449d44;
+      text-decoration: none;
+    }
+    .div{
+      display: inline-block;
+      vertical-align: top;
+      margin-right:20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="div">
+  姓名 : <input type="text" name="user1" placeholder="请输入姓名,add数据库"><br>
+  年龄 : <input type="text" name="age1" placeholder="请输入年龄,add数据库"><br>
+  <input type="button" onclick="add()" value="增加">
+</div>
+<div class="div">
+  姓名 : <input type="text" name="user2" placeholder="请输入姓名,query数据库"><br>
+  <input type="button" onclick="query()" value="查询">
+</div>
+
+<div class="div">
+  姓名 : <input type="text" name="user3" placeholder="请输入姓名"><br>
+  <input type="button" value="删除">
+</div>
+
+<div class="div">
+  姓名 : <input type="text" name="user4" placeholder="请输入姓名"><br>
+  <input type="button" value="更改">
+</div>
+
+
+<div style="overflow:hidden; text-align: center;">
+  <div style="float: left;">
+    <table id="tab1" border="1" style="width: 300px;">
+      <h1 style="display:inline-block;">添加的结果</h1>
+      <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+      </tr>
+    </table>
+  </div>
+
+  <div style="float: right; text-align: center;">
+    <table id="tab2" border="1" style="width: 300px;">
+      <h1 style="display:inline-block;">查询的结果</h1>
+      <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+</body>
+<script>
+
+  var old = [];
+
+  function add() {
+
+    console.log(old);
+    var user = document.querySelector('input[name="user1"]').value;
+    var age = document.querySelector('input[name="age1"]').value;
+    if(user==''||age==''){
+      alert('姓名或年龄输入有误,请重新输入');
+      return;
+    }
+    for(var i=0;i<old.length;i++){
+      if(old[i]==user){
+        alert('姓名已经存在,请重新输入');
+        return;
+      }
+    }
+    var users = {
+      user:user,
+      age:age
+    };
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', '/reg', true);
+    xhr.responseType='json';
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState == 4) {
+        if (xhr.status == 200) {
+          var user = xhr.response;
+          old.push(user.user);
+          var table = document.querySelector('#tab1');
+          var tr = document.createElement('tr');
+          var td1 = document.createElement('td');
+          var td2 = document.createElement('td');
+          td1.innerHTML = user.user;
+          td2.innerHTML = user.age;
+          tr.appendChild(td1);
+          tr.appendChild(td2);
+          table.appendChild(tr);
+        }
+      }
+    };
+    xhr.send(JSON.stringify(users));
+  }
+
+  function query(){
+    var user = document.querySelector('input[name="user2"]').value;
+    var users = {
+      user:user
+    };
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET','/reg?query='+user.user+'',true);
+    xhr.responseType='json';
+    xhr.onreadystatechange= function () {
+      if(xhr.readyState==4){
+        if(xhr.status==200){
+          var user = xhr.response;
+          var tab = document.querySelector('#tab2');
+          var tr = document.createElement('tr');
+          var td1 = document.createElement('td');
+          var td2 = document.createElement('td');
+          // td1.innerHTML = user.user;
+          // td2.innerHTML = user.age;
+          console.log(user);
+        }
+      }
+    };
+    xhr.send();
+  }
+
+
+</script>
+</html>
