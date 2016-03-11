@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>用户注册系统</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="" rel="stylesheet">
+    <style>
+        body{
+            font-size: 12px;
+        }
+        .username, .age{
+            margin: 0 10px;
+        }
+        .info-box{
+            margin-top: 30px;
+        }
+        .table-box{
+            border: 1px solid #000;
+        }
+        .table-box tr{
+            height: 30px;
+            text-align: center;
+        }
+        .table-box td{
+            width: 70px;
+        }
+    </style>
+</head>
+<body>
+用户名:
+<input type="text" name="username" class="username"/>
+年龄:
+<input type="text" name="age" class="age"/>
+<input type="button" class="register" value="注册"/>
+<input type="button" class="query" value="查询"/>
+<input type="button" class="del" value="删除"/>
+<input type="button" class="mof" value="修改"/>
+<div class="info-box"></div>
+
+<script>
+    var username = document.querySelector('.username'),
+        age = document.querySelector('.age'),
+        register = document.querySelector('.register'),
+        query = document.querySelector('.query'),
+        del = document.querySelector('.del'),
+        mof = document.querySelector('.mof'),
+        box = document.querySelector('.info-box');
+
+    var userInfo = {
+        name: '',
+        age: ''
+    };
+
+    var isRegSending = false;
+    var isQuerySending = false;
+
+    //注册个人信息
+    register.onclick = function () {
+        if (isRegSending) return;
+        isRegSending = true;
+        userInfo.name = username.value;
+        userInfo.age = age.value;
+        ajaxRegisterFn(JSON.stringify(userInfo));
+    };
+
+    //查询注册历史
+    query.onclick = function () {
+        if (isQuerySending) return;
+        isQuerySending = true;
+        ajaxQueryFn();
+    };
+
+    //清空全部注册信息
+    del.onclick = function () {
+        ajaxDelFn();
+    };
+
+    //修改注册信息
+    mof.onclick = function () {
+        userInfo.name = username.value;
+        userInfo.age = age.value;
+        ajaxMofFn(JSON.stringify(userInfo));
+    };
+
+    //查询历史
+    function ajaxQueryFn() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'register?ajax=query');
+        xhr.responseType = 'json';  //设置期待的返回值的数据类型
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+//                    var res = xhr.responseText;
+                    var resObj = xhr.response;
+//                    var resObj = JSON.parse(res);
+                    matchHTML(resObj);
+                    console.log(resObj);
+                    isQuerySending = false;
+                }
+            }
+        };
+        xhr.send(null);
+    }
+
+    //注册
+    function ajaxRegisterFn(data) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'register?ajax=reg');
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    var res = xhr.responseText;
+                    alert(res);
+                    isRegSending = false;
+                }
+            }
+        };
+        xhr.send(data);
+    }
+
+    //拼接查询结果
+    function matchHTML(data) {
+        var tBox = document.querySelector('.table-box');
+        if (tBox) {
+            box.innerHTML = '';
+        }
+        if (data == 0) return;
+
+        var cBox = document.createElement('table');
+        var thHTML = '<tr><th>姓名</th><th>年龄</th></tr>';
+        cBox.className = 'table-box';
+        cBox.innerHTML = thHTML;
+
+        data.forEach(function (val) {
+            var tr = document.createElement('tr');
+            var tdHTML = '<td>' + val.name + '</td><td>' + val.age + '</td>';
+            tr.innerHTML = tdHTML;
+            cBox.appendChild(tr);
+        });
+
+        box.appendChild(cBox);
+    }
+
+    //清空查询结果
+    function ajaxDelFn() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/register?ajax=del');
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    alert(xhr.responseText);
+                    box.innerHTML = '';
+                }
+            }
+        };
+        xhr.send(null);
+    }
+
+    //修改查询结果
+    function ajaxMofFn(data) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', '/register?ajax=mof');
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    var res = xhr.responseText;
+                    alert(res);
+                }
+            }
+        };
+        xhr.send(data);
+    }
+</script>
+</body>
+</html>
