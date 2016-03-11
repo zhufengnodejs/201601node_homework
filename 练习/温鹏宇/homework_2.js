@@ -24,3 +24,5 @@ function makep(path,callback){
             }
         });
 }
+
+makep('/sss/3.txt',null)
