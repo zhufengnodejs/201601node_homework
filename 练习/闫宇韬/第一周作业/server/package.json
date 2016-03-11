@@ -1,0 +1,15 @@
+{
+  "name": "yanyutao",
+  "version": "1.0.0",
+  "description": "闫宇node的添加和展示案例",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "闫宇��韬",
+  "license": "MIT"
+}

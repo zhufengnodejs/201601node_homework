@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="//cdn.bootcss.com/bootstrap/4.0.0-alpha.2/css/bootstrap.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="form-group">
+        <label for="exampleInputName2">用户名</label>
+        <input type="text" class="form-control" id="exampleInputName2" placeholder="用户名" name="username">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail2">年龄</label>
+        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="年龄" name="age">
+    </div>
+    <button type="submit" class="btn btn-default" onclick="reg()">注册</button>
+
+    <table class="table table-condensed list">
+        <tbody>
+        <tr>
+            <td>用户名</td>
+            <td>年龄</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div class="form-group">
+        <label for="exampleInputName2">查询</label>
+        <input type="text" class="form-control"  placeholder="输入名字进行查询 例如：钟汉良" name="queryName">
+    </div>
+    <button type="submit" class="btn btn-default" onclick="query()">查询</button>
+    <table class="table table-condensed query">
+        <tbody>
+        <tr>
+            <td>用户名</td>
+            <td>年龄</td>
+        </tr>
+        </tbody>
+    </table>
+    <p></p>
+    <script type="text/javascript">
+        function query(){
+            var queryName = document.querySelector("input[name='queryName']").value;
+
+            var xhr = new XMLHttpRequest();
+            //指定参数 1
+            xhr.open('POST','/query',true);
+            //注册当状态变化之后的回调函数
+
+            xhr.responseType = 'json';
+
+            xhr.onreadystatechange = function(){
+                //当状态为4的时候，也就是响应接收完毕的时候
+                if(xhr.readyState == 4){
+                    var pHtml = document.querySelector("p");
+                    if(xhr.status == 200){
+                        console.log(xhr.status);
+                        var user = xhr.response;
+                        var tbody = document.querySelector("table.query tbody");
+                        var tr = document.createElement('tr');
+                        var td1 = document.createElement('td');
+                        td1.innerHTML =user.username;
+                        var td2 = document.createElement('td');
+                        td2.innerHTML =user.age;
+                        tr.appendChild(td1);
+                        tr.appendChild(td2);
+                        tbody.appendChild(tr);
+                        pHtml.innerHTML = '';
+                    }else{
+                        console.log(xhr.status);
+                        var pHtml = document.querySelector("p");
+                        pHtml.innerHTML = '查无此人';
+                    }
+                }
+            }
+            //指定请求体发送数据
+            xhr.send(queryName);
+        }
+        function reg(){
+            var username = document.querySelector("input[name='username']").value;
+            var age  =document.querySelector("input[name='age']").value;
+            var user = {
+                username:username,
+                age:age
+            }
+            var xhr = new XMLHttpRequest();
+            //指定参数 1
+            xhr.open('POST','/reg',true);
+            //注册当状态变化之后的回调函数
+
+            xhr.responseType = 'json';
+
+            xhr.onreadystatechange = function(){
+                //当状态为4的时候，也就是响应接收完毕的时候
+                if(xhr.readyState == 4 && xhr.status == 200){
+                    var user = xhr.response;
+                    console.log(user);
+                    user = JSON.parse(user);//转对象
+                    var tbody = document.querySelector("table.list tbody");
+                    var tr = document.createElement('tr');
+                    var td1 = document.createElement('td');
+                    td1.innerHTML =user.username;
+                    var td2 = document.createElement('td');
+                    td2.innerHTML =user.age;
+                    tr.appendChild(td1);
+                    tr.appendChild(td2);
+                    tbody.appendChild(tr);
+                }
+            }
+            //指定请求体发送数据
+            xhr.send(JSON.stringify(user));
+        }
+
+    </script>
+
+</body>
+</html>

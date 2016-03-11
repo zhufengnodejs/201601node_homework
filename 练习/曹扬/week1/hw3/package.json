@@ -1,0 +1,19 @@
+{
+  "name": "a_simple_buffer_concat",
+  "version": "1.0.0",
+  "description": "a simple realization of buffer concat",
+  "main": "concat.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "buffer",
+    "concat"
+  ],
+  "author": "MattCao",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "should": "^8.2.2"
+  }
+}

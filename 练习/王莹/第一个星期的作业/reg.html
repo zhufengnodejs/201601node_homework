@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" name="username">
+<input type="text" name="age">
+<input type="button" onclick="reg()" value="注册">
+<input type="button" onclick="sel()" value="查询">
+<input type="hidden" id="data">
+<input type="hidden" id="index">
+<table>
+    <tbody>
+    <tr>
+        <td>用户名</td>
+        <td>年  龄</td>
+    </tr>
+    </tbody>
+</table>
+<table>
+    <tbody>
+    <tr>
+        <td>姓名编辑:</td>
+        <td>年龄编辑:</td>
+    </tr>
+    <tr>
+        <td><input id="name" type="text"></td>
+        <td><input id="age" type="text"></td>
+        <td><input type="button" value="保存" onclick="save()"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
+<script>
+    function save(){
+        var user={};
+        user.username=document.getElementById('name').value;
+        user.age=document.getElementById('age').value;
+        user.index=document.getElementById('index').value;
+        var xml=new XMLHttpRequest();
+        xml.open('POST','/save',true);
+        xml.responseType='json';
+        xml.onreadystatechange=function(){
+            if(xml.readyState==4 && xml.status==200){
+                var table=document.querySelector('table');
+                table.innerHTML="";
+                var userList=xml.response;
+                var tbody=document.createElement('tbody');
+                var tr=document.createElement('tr');
+                var td1=document.createElement('td');
+                var td2=document.createElement('td');
+                td1.innerHTML="姓名";
+                td2.innerHTML="年龄";
+                tr.appendChild(td1);
+                tr.appendChild(td2);
+                tbody.appendChild(tr);
+                table.appendChild(each(tbody,userList));
+                document.getElementById('name').value="";
+                document.getElementById('age').value="";
+                document.getElementById('index').value="";
+            }
+        }
+        xml.send(JSON.stringify(user));
+    };
+    function ide(index){
+        var data=JSON.parse(document.getElementById('data').value);
+        document.getElementById('name').value=data[index].username;
+        document.getElementById('age').value=data[index].age;
+        document.getElementById('index').value=index;
+    };
+    function delet(index){
+        var xml=new XMLHttpRequest();
+        xml.open('POST','/del',true);
+        xml.responseType='json';
+        xml.onreadystatechange=function(){
+            if(xml.readyState==4 && xml.status==200){
+                var table=document.querySelector('table');
+                table.innerHTML="";
+                var response=xml.response;
+                var userList=xml.response;
+                var tbody=document.createElement('tbody');
+                var tr=document.createElement('tr');
+                var td1=document.createElement('td');
+                var td2=document.createElement('td');
+                td1.innerHTML="姓名";
+                td2.innerHTML="年龄";
+                tr.appendChild(td1);
+                tr.appendChild(td2);
+                tbody.appendChild(tr);
+                table.appendChild(each(tbody,userList));
+            }
+        }
+        xml.send(index.toString());
+    };
+    function sel(){
+        var xml=new XMLHttpRequest();
+        xml.open('GET','/sel',true);
+        xml.responseType='json';
+        xml.onreadystatechange=function(){
+            if(xml.readyState==4 && xml.status==200){
+                var table=document.querySelector('table');
+                table.innerHTML="";
+                var userList=xml.response;
+                var tbody=document.createElement('tbody');
+                var tr=document.createElement('tr');
+                var td1=document.createElement('td');
+                var td2=document.createElement('td');
+                td1.innerHTML="姓名";
+                td2.innerHTML="年龄";
+                tr.appendChild(td1);
+                tr.appendChild(td2);
+                tbody.appendChild(tr);
+                table.appendChild(each(tbody,userList));
+            }
+        }
+        xml.send();
+    };
+    function each(tbody,userList){
+        document.getElementById('data').value=JSON.stringify(userList);
+        for(var index in userList){
+            var trUser=document.createElement('tr');
+            var tdName=document.createElement('td');
+            var tdAge=document.createElement('td');
+            var del=document.createElement('td');
+            var ide=document.createElement('td');
+            tdName.innerHTML=userList[index].username;
+            tdAge.innerHTML=userList[index].age;
+            del.innerHTML='<a onclick="delet('+index+')">删除</a>'
+            ide.innerHTML='<a onclick="ide('+index+')">编辑</a>'
+            trUser.appendChild(tdName);
+            trUser.appendChild(tdAge);
+            trUser.appendChild(del);
+            trUser.appendChild(ide);
+            tbody.appendChild(trUser);
+        }
+        return tbody;
+    };
+    function reg(){
+        var username=document.querySelector("input[name='username']").value;
+        var age=document.querySelector("input[name='age']").value;
+        var user={
+            username:username,
+            age:age
+        }
+        var xhr=new XMLHttpRequest();
+        //xhr.open(method, url, async, user, password);
+        //指定参数
+        xhr.open('POST','/reg',true);
+        xhr.responseType="json";
+        //注册当状态变化的之后的回调函数
+        xhr.onreadystatechange=function(){
+            if(xhr.readyState==4 && xhr.status==200){
+                var user=xhr.response;
+                console.log(xhr.response);
+                var tbody=document.querySelector('table tbody');
+                var tr=document.createElement('tr');
+                var td1=document.createElement('td');
+                var td2=document.createElement('td');
+                td1.innerHTML=user.username;
+                td2.innerHTML=user.age;
+                tr.appendChild(td1);
+                tr.appendChild(td2);
+                tbody.appendChild(tr);
+            }else{
+                console.log(xhr.statusText);
+            }
+        }
+        //指定请求体发送数据
+        xhr.send(JSON.stringify(user));
+    };
+</script>

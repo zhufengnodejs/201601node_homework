@@ -1,0 +1,36 @@
+table {
+    width: 100%;
+    font-size: 14px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table th, table td {
+    font-size: 12px;
+    padding: 5px 10px;
+    border: #e9e9e9 1px solid;
+    text-align: center;
+}
+
+table th {
+    font-weight: 700;
+    background-color: #f8f7f7;
+    white-space: nowrap;
+}
+
+.add,
+.result {
+    margin: 50px auto;
+    width: 500px;
+    text-align: center;
+}
+
+.title {
+    color: #f00;
+}
+
+.result p {
+    margin: 10px auto;
+    width: 230px;
+    text-align: left;
+}

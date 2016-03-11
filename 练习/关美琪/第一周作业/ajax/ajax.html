@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #list_left{float:left;width:48%;border:2px solid #003abf;padding:10px;}
+        .list_right{float:right;width:48%;border:2px solid #003abf;padding:10px;}
+        .button1{width:40px;height:40px;border-radius: 50%;}
+        .button2{width:40px;height:40px;border-radius: 50%;}
+    </style>
+</head>
+<body>
+<div id="list_left">
+    <h1>查询</h1>
+    <p>查询用户信息</p>
+    <input type="button" value="查询" class="button1" onclick="que()"/>
+</div>
+<div class="list_right">
+    <h1>增加</h1>
+    <p>添加用户信息</p>
+    <span>用户名</span><input type="text" name="username" placeholder="请输入用户名"/><br/>
+    <span>年龄</span><input type="text" name="age" placeholder="请输入年龄信息"/><br/>
+    <input type="button" value="增加" class="button2" onclick="reg()"/>
+    <table>
+        <tr>
+            <td>用户名</td>
+            <td>年龄</td>
+        </tr>
+    </table>
+</div>
+<script>
+function que(){
+    var xhr=new XMLHttpRequest();
+    xhr.open('GET','/que',true);
+    xhr.onreadystatechange=function(){
+        if(xhr.readyState == 4) {
+            if (xhr.status == 200) {
+
+            }
+        }
+    };
+    xhr.send();
+}
+function reg(){
+    var username = document.querySelector("input[name='username']").value;
+    var age  =document.querySelector("input[name='age']").value;
+    var user={
+        username:username,
+        age:age
+    };
+    var xhr=new XMLHttpRequest();
+    xhr.open('POST','/reg',true);
+    xhr.responseType='json';
+    xhr.onreadystatechange=function(){
+        if(xhr.readyState==4){
+            if(xhr.status==200){
+               console.log(user);
+                document.querySelector("input[name='username']").value='';
+                document.querySelector("input[name='age']").value='';
+                var tbody = document.querySelector("table tbody");
+                var tr = document.createElement('tr');
+                var td1 = document.createElement('td');
+                td1.innerHTML =user.username;
+                var td2 = document.createElement('td');
+                td2.innerHTML =user.age;
+                tr.appendChild(td1);
+                tr.appendChild(td2);
+                tbody.appendChild(tr);
+            }
+        }
+    };
+    //指定请求体发送数据
+    xhr.send(JSON.stringify(user));
+
+}
+</script>
+</body>
+</html>

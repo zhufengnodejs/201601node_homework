@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="creatrSever.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div class="outer">
+    <span>姓名：</span><input id="username" class="userType ageType"/>
+    <span>年龄：</span><input type="text" id="age" class="ageType"/>
+    <div id="sub" class="commit">注册</div>
+    <div class="clear"></div>
+    <div class="inner">
+      <table id="oTable">
+          <tbody>
+          <!--<tr>
+              <td>姓名：斤斤计较</td>
+              <td>年龄：20</td>
+          </tr>-->
+          </tbody>
+      </table>
+    </div>
+    <div id="check">查看</div>
+<script>
+    var sub=document.getElementById('sub');
+    var check=document.getElementById('check');
+    var username=document.getElementById('username');
+    var age=document.getElementById('age');
+    var oTable=document.getElementById('oTable').getElementsByTagName('tbody')[0];
+    var checkResult=null;
+    function reg(){
+        var obj={};
+        obj.userName=username.value;
+        obj.age=age.value
+        var xhr=new XMLHttpRequest()
+        xhr.open('POST','/creatrSever',true);
+        xhr.responseType='json';//自动字符串转成json
+        xhr.onreadystatechange =function(){
+            if(xhr.readyState==4){
+                if(xhr.status==200){
+                    var result=xhr.response;
+                    checkResult=result;
+                }
+            }
+        }
+        xhr.send(JSON.stringify(obj))
+    }
+    sub.addEventListener('click',reg,false);
+    check.addEventListener('click',function(){
+            if(!checkResult){//说明里面没有注册信息
+                alert('还没有注册过')
+            }else{
+                var otr=document.createElement('tr');
+                var othName=document.createElement('td');
+                var othAge=document.createElement('td');
+                othName.innerHTML=checkResult.userName;
+                othAge.innerHTML=checkResult.age;
+                otr.appendChild(othName);
+                otr.appendChild(othAge);
+                oTable.appendChild(otr);
+            }
+    })
+</script>
+</div>
+
+</body>
+</html>

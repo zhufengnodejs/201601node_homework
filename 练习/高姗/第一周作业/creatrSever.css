@@ -1,0 +1,10 @@
+body{padding:0;margin:0;font-family: \5FAE\8F6F\96C5\9ED1;}
+.outer{width:500px;margin:0 auto;min-height:400px;margin-top:100px;}
+.inner{width:500px;margin:0 auto;border:1px solid #EAEAEA;margin-top:10px;min-height:200px;border-radius: 5px}
+.userType{margin-right:10px}
+.ageType{text-indent:10px;font-family: \5FAE\8F6F\96C5\9ED1;outline:none;width:150px;height:40px;line-height: 40px;margin:0;padding:0;border: 1px solid #C7C7C7;border-radius: 5px}
+.commit{cursor:pointer;-webkit-user-select:none;erfloat:right;display:inline-block;color:white;width:80px;height:40px;line-height: 40px;text-align: center;background: mediumturquoise;border-radius: 5px}
+.clear{clear: both}
+#check{cursor:pointer;text-align: center;-webkit-user-select:none;margin-top:10px;width:80px;height:35px;line-height: 35px;border-radius: 5px;background: sandybrown;color:white}
+#oTable{width:450px;margin:0 auto;}
+#oTable tr{height:40px;font-size:14px;color:#777}

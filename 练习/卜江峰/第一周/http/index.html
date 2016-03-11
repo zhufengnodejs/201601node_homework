@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>注册页面</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row col-md-10 col-md-offset-1">
+        <div>
+            <div class="row">
+                <div class="form-group col-md-2">
+                    <label for="exampleInputEmail1">姓名</label>
+                    <input type="text" name="name" class="form-control " id="exampleInputEmail1" placeholder="姓名">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-2">
+                    <label for="exampleInputPassword1">年龄</label>
+                    <input type="number" name="age" class="form-control" id="exampleInputPassword1" placeholder="年龄">
+                </div>
+            </div>
+            <div class="row">
+                <button type="submit" class="btn btn-default" style="margin-left: 15px;">添加</button>
+                <button type="submit" class="btn btn-default">查询</button>
+            </div>
+        </div>
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>操作</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    var submit=document.querySelector('button[type="submit"]');
+    var id=1;
+    submit.onclick=function(){
+        register();
+    }
+    function register(){
+        var username =document.querySelector('input[name="name"]').value;
+        var age = document.querySelector('input[name="age"]').value;
+        var user = {
+            id:id,
+            username:username,
+            age:age
+        }
+        console.log(user);
+        var xhr=new XMLHttpRequest();
+        xhr.open('POST','reg',true);
+        xhr.responseType = 'json';
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState == 4){
+                id+=1;
+                if(xhr.status == 200){
+                    var user = xhr.response;
+                    console.log(user);
+                    var tbody = document.querySelector("table tbody");
+                    var tr = document.createElement('tr');
+                    var th = document.createElement('th');
+                    var td1 = document.createElement('td');
+                    var td2 = document.createElement('td');
+                    var td3 = document.createElement('td');
+                    th.innerHTML=user.id;
+                    td1.innerHTML =user.username;
+                    td2.innerHTML =user.age;
+                    tr.appendChild(th);
+                    tr.appendChild(td1);
+                    tr.appendChild(td2);
+                    tr.appendChild(td3);
+                    tbody.appendChild(tr);
+                    if( id%2 == 0){
+                        tr.className="active";
+                    }else{
+                        tr.className="info";
+                    }
+
+                }else{
+
+                }
+
+            }
+        }
+        xhr.send(JSON.stringify(user));
+
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "ajax_restful_with_node",
+  "version": "1.0.0",
+  "description": "using the ajax to realize a restful framework by using the nodejs",
+  "main": "server.js",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "mime": "^1.3.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "ajax",
+    "restful",
+    "nodejs"
+  ],
+  "author": "MattCao",
+  "license": "MIT"
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>添加数据</title>
+		<link rel="stylesheet" type="text/css" href="css/mkui-base.css"/>
+		<style type="text/css">
+			body{
+				margin-left: auto;
+				margin-right: auto;
+				max-width: 640px;
+			}
+			h1{
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+			button{
+				border: none;
+			}
+			ul{
+				margin-top: 10px;
+			}
+			a{
+				display: block;
+			}
+			input{
+				border: 1px solid #efefef;
+				height:40px;
+				padding: 4px 5px;
+				margin-left: 10px;
+				margin-right: 10px;
+				border-radius: 4px;
+				margin-bottom: 5px;
+				width: -webkit-calc(100% - 20px);
+			}
+			.add{
+				background: #0F9AE0;
+				display: block;
+				width: -webkit-calc(100% - 20px);
+				height: 40px;
+				border-radius: 4px;
+				color: #fff;
+				font-size: 16px;
+				margin-left:10px;
+				margin-right: 10px;
+			}
+			.add:hover{
+				background: #3BB4F2;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 class="text-c">添加数据 --闫宇韬 </h1>
+		<ul>
+			<li><input type="text" name="name" placeholder="请输入您的姓名"/></li>
+			<li><input type="number" name="age" placeholder="请输入您的年龄"/></li>
+			<li><input type="text" name="des" placeholder="请输入您的职位"/></li>
+		</ul>
+		<button class="btn-add add">添加数据</button>
+		<button class="btn-show add mt-10">查看数据</button>
+		<script src="./js/mkui.v0.2.js"></script>
+		<script src="./js/ajax.js"></script>
+		<script>
+
+			var addData = {
+				//存发送数据
+				data:{
+					"method":"addperson"
+				},
+				//判断是否有值
+				isEmpty:function(val){
+					if(val){
+						return true;
+					}
+					return false;
+				},
+				//判断是否是数字
+				isAge:function(num){
+					if(num>0 && num<120){
+						return true;
+					}
+					return false;
+				},
+				//处理单击事件
+				addEvent:function(){
+					var that = this;
+					if(that.isEmpty(m('input[name=name]').val())){
+						console.log(m('input[name=name]').val())
+						that.data.name = m('input[name=name]').val();
+					}else{
+						m.ui.alert({"msg":"请输入姓名"});
+						return;
+					}
+					
+					if(that.isEmpty(m('input[name=age]').val()) && that.isAge(m('input[name=age]').val())){
+						that.data.age = m('input[name=age]').val();
+					}else{
+						m.ui.alert({"msg":"请正确输入年龄"});
+						return;
+					}
+					
+					if(that.isEmpty(m('input[name=des]').val())){
+						that.data.des = m('input[name=des]').val();
+					}else{
+						m.ui.alert({"msg":"请输入职位"});
+						return;
+					}
+					
+					this.sendAjax(that.data);
+					
+				},
+				//发送ajax请求
+				sendAjax:function(){
+					var that = this;
+					ajax({url:'./add.html',data:that.data,success:function(data){
+						var msg = JSON.parse(data);
+						console.log(JSON.parse(data))
+						m.ui.alert({'msg':msg.msg});
+					}})
+				},
+				//初始化
+				init:function(){
+					var that = this;
+					m('.btn-add').click(function(){
+						that.addEvent();
+					});
+					
+					m('.btn-show').click(function(){
+						window.location.href="show.html";
+					})
+				}
+			};
+	
+			addData.init();
+			
+		</script>
+	</body>
+</html>
