@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>用户列表</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>姓名：</td>
+        <td><input type="text" id="txtName"></td>
+        <td>年龄:</td>
+        <td><input type="text" id="txtAge"></td>
+        <td><input type="button" onclick="addUser()" value="添加用户"></td>
+    </tr>
+</table>
+<hr/>
+<table style="width: 400px">
+    <thead>
+    <tr>
+        <td>姓名</td>
+        <td>年龄</td>
+        <td>操作</td>
+    </tr>
+    </thead>
+    <tbody id="userBody">
+    <tr>
+        <td>张三</td>
+        <td>25</td>
+        <td><a onclik='delUser()'>删除</a></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+<script type="text/javascript">
+    function addUser() {
+        var name = document.getElementById('txtName').value;
+        var age = document.getElementById('txtAge').value;
+        var user = {id: 0, name: name, age: age};
+        httpRequest('/addUser', user, function (data) {
+            if (data == 'ok') {
+                queryUserList();
+            }
+        });
+    }
+
+    function delUser(id) {
+        if (id && id > 0) {
+            httpRequest('/delUser', {id: id}, function (data) {
+                if (data == 'ok') {
+                    queryUserList();
+                }
+            });
+        }
+    }
+
+    function queryUserList() {
+        httpRequest('/getUsers', {}, function (data) {
+            document.getElementById('userBody').innerHTML = "";
+            var html = "";
+            var UserList = JSON.parse(data);
+            if (UserList !== undefined && UserList.length > 0) {
+                UserList.forEach(function (userInfo) {
+                    html += "<tr><td>" + userInfo.name + "</td><td>" + userInfo.age + "</td><td><a href='' onclick='delUser(" + userInfo.id + ")'>删除</a></td></tr>";
+                });
+            }
+            document.getElementById('userBody').innerHTML = html;
+        });
+    }
+
+    function httpRequest(url, data, callBack) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', url, true);
+        xhr.responseType = 'text';
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status == 200) {
+                    if (callBack) {
+                        callBack(xhr.responseText);
+                    }
+                }
+            }
+        }
+        //指定请求体发送数据
+        xhr.send(JSON.stringify(data));
+    }
+
+    window.onload = queryUserList();
+</script>
+</html>

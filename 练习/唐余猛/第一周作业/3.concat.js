@@ -54,3 +54,9 @@ function myConcat(bufArray, length){
 
 /*测试五 传入第一个参数不是数组*/
 // const resultBuf = myConcat(123);
+
+
+const buf1 = new Buffer("珠峰培训");
+const length = buf1.length ;
+const resultBuf = myConcat([buf1],4);
+console.log(resultBuf.toString());
