@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试代理服务器</title>
+</head>
+<body>
+用户名： <input type="text" id="userName"><br>
+年 龄：<input type="text" id="age"><br>
+<input type="button" id="addBtn" onclick="addUser();" value="添加用户"><br>
+<div id="usersDiv">
+
+</div>
+</body>
+</html>
+<script>
+    showUsers();
+    function ajax(option) {
+        var xhr = new XMLHttpRequest();
+        xhr.open(option.method, option.url, true);
+        xhr.responseType = option.responseType;
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    option.success(xhr.response);
+                }
+                else {
+                    option.error(xhr.response);
+                }
+            }
+        }
+        xhr.send(option.data);
+    }
+
+    function addUser() {
+        var userName = document.getElementById("userName").value;
+        var pwd = document.getElementById("age").value;
+        ajax({
+            url: "/users",
+            method: "POST",
+            responseType: "json",
+            success: function (data) {
+                if (data.code === 0) {
+                    //注册成功
+                    showUsers();
+                } else {
+                    alert(data.msg);
+                }
+            },
+            error: function (err) {
+                alert(err);
+            },
+            data: JSON.stringify([{name: userName, age: pwd}])
+        });
+    }
+
+    function showUsers() {
+        var showUsersDiv=document.getElementById("usersDiv");
+        ajax({
+            url: "/users",
+            method: "GET",
+            responseType: "json",
+            success: function (data) {
+               if(data.length>0){
+                   var html="";
+                   for(var i=0;i<data.length;i++){
+                       html+="<br>"+data[i].name+"今年"+data[i].age+"岁";
+                   }
+                   showUsersDiv.innerHTML=html;
+               }else{
+                   showUsersDiv.innerHTML="暂无用户";
+               }
+            },
+            error: function (err) {
+                alert(err);
+            },
+            data: JSON.stringify({name: userName, age: age})
+        });
+    }
+
+</script>

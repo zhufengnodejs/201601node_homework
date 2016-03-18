@@ -2,36 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="515a98bd-06ad-43aa-9e5e-b9dfc453ef7d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/刘宏捷/file/6.目录.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/刘宏捷/file/age.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/刘宏捷/file/all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/刘宏捷/file/book/javaScript.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/刘宏捷/file/book/mysql.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/刘宏捷/file/book/node.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/刘宏捷/file/copy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/刘宏捷/file/index-01.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/刘宏捷/file/index.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/刘宏捷/file/name.text" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/刘宏捷/file/path.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/刘宏捷/file/writeFile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/刘宏捷/http/4.静态文件.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/刘宏捷/http/5.静态文件2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/刘宏捷/http/6.clock.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/刘宏捷/http/6.query.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/刘宏捷/http/7.clock.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/刘宏捷/http/8.reg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/刘宏捷/http/clock.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/刘宏捷/http/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/刘宏捷/http/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/刘宏捷/http/reg.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/刘宏捷/http/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/刘宏捷/http/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/刘宏捷/http/获取请求中的数据.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/201601node_homework" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/201601node_homework.iml" afterPath="$PROJECT_DIR$/.idea/201601node_homework.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/1.实现once方法/EventEmitter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/1.实现once方法/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/1.实现once方法/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/dataServer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/myExpress/connect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/myExpress/middle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/proxyServer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/public/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/css/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/js/npm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/jquery-1.11.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/reg.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/user.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/modules/data.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/modules/user.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/css/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/css/bootstrap-theme.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/css/bootstrap.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/js/npm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/javascripts/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/javascripts/jquery-1.11.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/views/login.jade" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/views/logout.jade" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/views/reg.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/练习/刘宏捷/lianxi-01.html" afterPath="$PROJECT_DIR$/练习/刘宏捷/lianxi-01.html" />
     </list>
     <ignored path="201601node_homework.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,7 +73,108 @@
     <favorites_list name="201601node_homework" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/routes/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="5" column="40" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="www" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/bin/www">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/routes/users.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jade" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/views/index.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/views/layout.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reg.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/views/reg.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/javascripts/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1984">
+              <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/modules/user.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tsconfig.json" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Jade File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,6 +183,34 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/练习/fdl/index.txt" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/reg.html" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/server.js" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/index.html" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/medial.js" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/middle.js" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/1.实现once方法.js" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/1.实现once方法/test.js" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/1.实现once方法/EventEmitter.js" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/1.实现once方法/index.js" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/myExpress/route.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/javascript/nodejs/4.3.1/core-modules/fs.js" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/dataServer.js" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/myExpress/connect.js" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/public/index.html" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/data.js" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/myExpress/middle.js" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/proxyServer.js" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/package.json" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/routes/index.js" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/views/reg.jade" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/views/login.jade" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/views/layout.jade" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/javascripts/index.js" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/modules/data.json" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/app.js" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/routes/users.js" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/modules/user.js" />
+        <option value="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/views/index.jade" />
       </list>
     </option>
   </component>
@@ -69,10 +220,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="742" />
-    <option name="y" value="19" />
-    <option name="width" value="850" />
-    <option name="height" value="688" />
+    <option name="y" value="-4" />
+    <option name="width" value="1920" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -81,8 +231,14 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
+    <OptionsSetting value="true" id="添加" />
+    <OptionsSetting value="true" id="移除" />
+    <OptionsSetting value="true" id="签出" />
+    <OptionsSetting value="true" id="更新" />
+    <OptionsSetting value="true" id="状态" />
+    <OptionsSetting value="true" id="编辑" />
+    <ConfirmationsSetting value="0" id="添加" />
+    <ConfirmationsSetting value="0" id="移除" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -99,6 +255,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -131,50 +288,97 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="201601node_homework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="201601node_homework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gaoyujuan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="G:/node" />
-    <property name="javascript.nodejs.core.library.configured.version" value="4.2.4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="G:/../../../local/bin/node" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/v4.3.1/bin/node" />
+    <property name="javascript.nodejs.core.library.configured.version" value="4.3.1" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/javascripts" />
+      <recent name="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public" />
+      <recent name="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.www">
+    <configuration default="false" name="proxyServer.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="proxyServer.js" working-dir="$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器">
+      <method />
+    </configuration>
+    <configuration default="false" name="dataServer.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="dataServer.js" working-dir="$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器">
+      <method />
+    </configuration>
+    <configuration default="false" name="connect.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="connect.js" working-dir="$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/myExpress">
+      <method />
+    </configuration>
+    <configuration default="false" name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="server.js" working-dir="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查">
+      <method />
+    </configuration>
+    <configuration default="false" name="www" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="www" working-dir="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/bin">
+      <method />
+    </configuration>
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
     <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GoRunFileConfiguration" factoryName="Go Single File">
+      <module name="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+    <configuration default="true" type="MongoRunConfiguration" factoryName="Mongo">
+      <setting name="path" value="" />
+      <setting name="shellParams" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
       <method />
     </configuration>
     <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
@@ -184,6 +388,7 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
@@ -194,10 +399,12 @@
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run-script" />
       <scripts />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
     <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>$USER_HOME$/.nvm/v4.3.1/bin/node</node-interpreter>
       <node-options />
       <working-directory>$PROJECT_DIR$</working-directory>
       <pass-parent-env>true</pass-parent-env>
@@ -209,8 +416,26 @@
       <recursive>false</recursive>
       <method />
     </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.proxyServer.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.dataServer.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.connect.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.server.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.www" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.www" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.dataServer.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.proxyServer.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.server.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.connect.js" />
+      </list>
+    </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -219,68 +444,460 @@
       <changelist id="515a98bd-06ad-43aa-9e5e-b9dfc453ef7d" name="Default" comment="" />
       <created>1457150695417</created>
       <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1457150695417</updated>
+      <workItem from="1458272181709" duration="1747000" />
+      <workItem from="1458286839095" duration="16526000" />
+      <workItem from="1458303383478" duration="8070000" />
+      <workItem from="1458313426593" duration="10584000" />
+      <workItem from="1458324064436" duration="1000000" />
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="37927000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="742" y="19" width="850" height="688" extended-state="0" />
+    <frame x="0" y="-4" width="1920" height="1084" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24753694" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17254274" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31002086" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24191867" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854578" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23983316" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3534932" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/练习/徐志伟/第二周作业/1.实现once方法/EventEmitter.js</url>
+          <line>6</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/myExpress/middle.js</url>
+          <line>17</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/myExpress/middle.js</url>
+          <line>7</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/myExpress/connect.js</url>
+          <line>7</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/myExpress/connect.js</url>
+          <line>165</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/dataServer.js</url>
+          <line>23</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/app.js</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/routes/users.js</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/routes/users.js</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/routes/users.js</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/modules/user.js</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="35" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="NodeJSConfigurationType">
+        <watch expression="req.url" language="JavaScript" />
+        <watch expression="next" />
+        <watch expression="data" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/练习/fdl/index.txt">
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/proxyServer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/node_modules/express/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/node_modules/express/lib/express.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/middle.js" />
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/index.html" />
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/dataServer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/js/npm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/reg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="157" column="60" selection-start-line="157" selection-start-column="60" selection-end-line="157" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_github.com_borisyankov_DefinitelyTyped_raw_master_express_express.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="825" column="12" selection-start-line="825" selection-start-column="12" selection-end-line="825" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/node_modules/express/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/node_modules/express/lib/express.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="168" column="15" selection-start-line="168" selection-start-column="15" selection-end-line="168" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/1.实现once方法/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="431" column="0" selection-start-line="431" selection-start-column="0" selection-end-line="431" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/1.实现once方法/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/index.html" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="909" column="0" selection-start-line="909" selection-start-column="0" selection-end-line="909" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/1.实现once方法/EventEmitter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/4.3.1/core-modules/url.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/4.3.1/core-modules/path.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="216" column="10" selection-start-line="216" selection-start-column="6" selection-end-line="216" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/myExpress/route.js" />
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/tsconfig.json" />
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/data.json" />
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/middle.js" />
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第一周作业/4.ajax增删改查/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第一周作业/4.ajax增删改查/reg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="159" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/4.3.1/core-modules/stream.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1536">
+          <caret line="48" column="45" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/myExpress/connect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2440">
+          <caret line="113" column="32" selection-start-line="113" selection-start-column="32" selection-end-line="113" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/dataServer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-96">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/proxyServer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1198">
+          <caret line="60" column="3" selection-start-line="60" selection-start-column="3" selection-end-line="60" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/js/npm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/node_modules/express-session/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/myExpress/middle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/javascripts/jquery-1.11.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/练习/fdl/index.txt">
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/views/login.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="160">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/views/reg.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/练习/fdl/index.txt">
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/views/layout.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+        <state relative-caret-position="96">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/练习/firstRemoteRepository.txt">
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="160">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/4.3.1/core-modules/fs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="1117" column="11" selection-start-line="1117" selection-start-column="3" selection-end-line="1117" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/javascripts/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1984">
+          <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/views/logout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/modules/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/routes/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/modules/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>

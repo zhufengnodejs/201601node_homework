@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册用户</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css"/>
+</head>
+<body>
+<div class="container">
+    <div>
+        <span>用户名：</span><input type="text" id="userName"><br>
+        <span>密  码：</span><input type="text" id="pwd"><br>
+        <input type="button" onclick="addUser();" id="addBtn" value="注 册"><br>
+    </div>
+    <hr>
+    <div>
+        用户名：<input type="text" id="queryName"><input type="button" id="queryBtn" onclick="queryUsers();" value="搜 索">
+    </div>
+    <div>
+        <table class="table table-bordered">
+            <thead>
+            <th>序 号</th>
+            <th>用户名</th>
+            <th>密 码</th>
+            <th>操 作</th>
+            </thead>
+            <tbody id="usersInfo">
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="jquery-1.11.1.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js "></script>
+<script type="text/javascript">
+    queryUsers();
+    function ajax(option) {
+        var xhr = new XMLHttpRequest();
+        xhr.open(option.method, option.url, true);
+        xhr.responseType = option.responseType;
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    option.success(xhr.response);
+                }
+                else {
+                    option.error(xhr.response);
+                }
+            }
+        }
+        xhr.send(option.data);
+    }
+
+    /**
+     * 绘制用户表格
+     * @param users 用户数组
+     */
+    function showUsers(users) {
+        document.getElementById("usersInfo").innerHTML = "";
+        for (var i = 0; i < users.length; i++) {
+            var user = users[i];
+            var tr = document.createElement("tr");
+            var noTd = document.createElement("td");
+            noTd.innerHTML = i + 1;
+            tr.appendChild(noTd);
+            var nameTd = document.createElement("td");
+            var nameSpan = document.createElement("span");
+            nameSpan.id = "showName_" + i;
+            nameSpan.innerHTML = user.name;
+            nameTd.appendChild(nameSpan);
+            var newNameInput = document.createElement("input");
+            newNameInput.id = "newName_" + i;
+            newNameInput.type = "text";
+            newNameInput.value = user.name;
+            newNameInput.style.display = "none";
+            nameTd.appendChild(newNameInput);
+            tr.appendChild(nameTd);
+            var pwdTd = document.createElement("td");
+            var pwdSpan = document.createElement("span");
+            pwdSpan.id = "showPwd_" + i;
+            pwdSpan.innerHTML = user.pwd;
+            pwdTd.appendChild(pwdSpan);
+            var newPwdInput = document.createElement("input");
+            newPwdInput.id = "newPwd_" + i;
+            newPwdInput.value = user.pwd;
+            newPwdInput.type = "text";
+            newPwdInput.style.display = "none";
+            pwdTd.appendChild(newPwdInput);
+            tr.appendChild(pwdTd);
+            var operationTd = document.createElement("td");
+            //更新按钮
+            var toUpdateBtn = document.createElement("input");
+            toUpdateBtn.type = "button";
+            toUpdateBtn.setAttribute("index", i);
+            toUpdateBtn.value = "修 改";
+            toUpdateBtn.className="btn btn-info";
+            toUpdateBtn.id = "toUpdate_" + i;
+            toUpdateBtn.onclick =showUpdateInfo;
+            operationTd.appendChild(toUpdateBtn);
+            //提交更新按钮
+            var updateBtn = document.createElement("input");
+            updateBtn.type = "button";
+            updateBtn.setAttribute("index", i);
+            updateBtn.value = "提 交";
+            updateBtn.id = "update_" + i;
+            updateBtn.style.display = "none";
+            updateBtn.className="btn btn-warning";
+            updateBtn.onclick =updateUser;
+            operationTd.appendChild(updateBtn);
+            //取消更新按钮
+            var cancelBtn = document.createElement("input");
+            cancelBtn.type = "button";
+            cancelBtn.setAttribute("index", i);
+            cancelBtn.value = "取 消";
+            cancelBtn.id = "cancel_" + i;
+            cancelBtn.style.display = "none";
+            cancelBtn.className="btn btn-info";
+            cancelBtn.onclick =hideUpdateInfo;
+            operationTd.appendChild(cancelBtn);
+            //删除按钮
+            var delBtn = document.createElement("input");
+            delBtn.type = "button";
+            delBtn.setAttribute("index", i);
+            delBtn.value = "删 除";
+            delBtn.className="btn btn-danger";
+            delBtn.id = "del_" + i;
+            delBtn.onclick =delUser;
+            operationTd.appendChild(delBtn);
+            tr.appendChild(operationTd);
+            document.getElementById("usersInfo").appendChild(tr);
+        }
+    }
+
+    /**
+     * 新增用户
+     */
+    function addUser() {
+        var userName = document.getElementById("userName").value;
+        var pwd = document.getElementById("pwd").value;
+        ajax({
+            url: "/user",
+            method: "POST",
+            responseType: "json",
+            success: function (data) {
+                if (data.code === 0) {
+                    //注册成功
+                    alert("注册成功");
+                    showUsers(data.data);
+                } else {
+                    alert(data.msg);
+                }
+            },
+            error: function (err) {
+                alert(err);
+            },
+            data: JSON.stringify({name: userName, pwd: pwd})
+        });
+    }
+    /**
+     * 删除用户
+     */
+    function delUser() {
+        var index=event.target.getAttribute("index");
+        var userName = document.getElementById("showName_" + index).innerHTML;
+        if (confirm("确定要删除用户：" + userName + "？")) {
+            ajax({
+                url: "/user?name=" + userName,
+                method: "DELETE",
+                responseType: "json",
+                success: function (data) {
+                    if (data.code === 0) {
+                        //删除成功
+                        alert("删除成功");
+                        showUsers(data.data);
+                    } else {
+                        alert(data.msg);
+                    }
+                },
+                error: function (err) {
+                    alert(err);
+                },
+                data: JSON.stringify({name:userName})
+            });
+        }
+    }
+    function showUpdateInfo() {
+        var index=event.target.getAttribute("index");
+        document.getElementById("del_" + index).style.display = "none";
+        document.getElementById("toUpdate_" + index).style.display = "none";
+        document.getElementById("showName_" + index).style.display = "none";
+        document.getElementById("showPwd_" + index).style.display = "none";
+
+        document.getElementById("cancel_" + index).style.display = "block";
+        document.getElementById("update_" + index).style.display = "block";
+        document.getElementById("newName_" + index).style.display = "block";
+        document.getElementById("newPwd_" + index).style.display = "block";
+    }
+    function hideUpdateInfo() {
+        var index=event.target.getAttribute("index");
+        document.getElementById("del_" + index).style.display = "block";
+        document.getElementById("toUpdate_" + index).style.display = "block";
+        document.getElementById("showName_" + index).style.display = "block";
+        document.getElementById("showPwd_" + index).style.display = "block";
+
+        document.getElementById("cancel_" + index).style.display = "none";
+        document.getElementById("update_" + index).style.display = "none";
+        document.getElementById("newName_" + index).style.display = "none";
+        document.getElementById("newPwd_" + index).style.display = "none";
+    }
+    /**
+     * 更新用户
+     */
+    function updateUser() {
+        var index=event.target.getAttribute("index");
+        var oldName = document.getElementById("showName_" + index).innerHTML;
+        var newName = document.getElementById("newName_" + index).value;
+        var newPwd = document.getElementById("newPwd_" + index).value;
+        ajax({
+            url: "/user",
+            method: "PUT",
+            responseType: "json",
+            success: function (data) {
+                if (data.code === 0) {
+                    //更新成功
+                    alert("更新成功");
+                    showUsers(data.data);
+                } else {
+                    alert(data.msg);
+                }
+            },
+            error: function (err) {
+                alert(err);
+            },
+            data: JSON.stringify({oldUserName: oldName, newUser: {name: newName, pwd: newPwd}})
+        });
+    }
+    /**
+     * 搜索用户
+     */
+    function queryUsers() {
+        var userName = document.getElementById("queryName").value;
+        ajax({
+            url: "/user?name=" + userName,
+            method: "GET",
+            responseType: "json",
+            success: function (data) {
+                if (data.code === 0) {
+                    showUsers(data.data);
+                } else {
+                    alert(data.msg);
+                }
+            },
+            error: function (err) {
+                alert(err);
+            },
+            data: ""
+        });
+    }
+</script>
