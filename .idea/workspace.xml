@@ -1,60 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="515a98bd-06ad-43aa-9e5e-b9dfc453ef7d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/1.实现once方法/EventEmitter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/1.实现once方法/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/1.实现once方法/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/dataServer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/myExpress/connect.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/myExpress/middle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/proxyServer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/2.服务端代理跨域服务器/public/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/bootstrap/js/npm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/jquery-1.11.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/reg.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/3.Restful风格的用户增删改查/user.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/modules/data.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/modules/user.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/css/bootstrap-theme.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/css/bootstrap.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/bootstrap/js/npm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/javascripts/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/public/javascripts/jquery-1.11.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/views/login.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/views/logout.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/views/reg.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="515a98bd-06ad-43aa-9e5e-b9dfc453ef7d" name="Default" comment="" />
     <ignored path="201601node_homework.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -117,7 +64,7 @@
       <file leaf-file-name="index.jade" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/views/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
+            <state relative-caret-position="320">
               <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
@@ -220,9 +167,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="-4" />
-    <option name="width" value="1920" />
-    <option name="height" value="1084" />
+    <option name="x" value="960" />
+    <option name="y" value="24" />
+    <option name="width" value="960" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -285,6 +233,72 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="练习" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="201601node_homework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="201601node_homework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="练习" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="徐志伟" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="201601node_homework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="201601node_homework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="练习" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="徐志伟" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="第二周作业" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="4.扩展作业" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="201601node_homework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="201601node_homework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="练习" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="徐志伟" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="第二周作业" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -450,21 +464,21 @@
       <workItem from="1458286839095" duration="16526000" />
       <workItem from="1458303383478" duration="8070000" />
       <workItem from="1458313426593" duration="10584000" />
-      <workItem from="1458324064436" duration="1000000" />
+      <workItem from="1458324064436" duration="1289000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37927000" />
+    <option name="totallyTimeSpent" value="38216000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1920" height="1084" extended-state="6" />
+    <frame x="960" y="24" width="960" height="1056" extended-state="4" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17254274" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35416666" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31002086" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24191867" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24919441" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -896,7 +910,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/练习/徐志伟/第二周作业/4.扩展作业/views/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
+        <state relative-caret-position="320">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
